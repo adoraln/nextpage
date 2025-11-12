@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NextPage - Meus Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glass-container">
+        <aside class="sidebar">
+            <div class="logo"> NextPage</div>
+            <div class="user-profile">
+                <div class="avatar"></div>
+                <h3>Usuário</h3>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">✦ Início</a></li>
+                        <li><a href="perfil.html" class="active">✦ Meus Livros</a></li>
+                        <li><a href="config.html">✦ Configurações</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2>Histórico de Empréstimos</h2>
+            <p>Aqui estão os registros dos seus aluguéis recentes.</p>
+
+            <div class="tabela-container">
+                <table id="tabela-livros">
+                    <thead>
+                        <tr>
+                            <th>Nome do Livro</th>
+                            <th>Período</th>
+                            <th>Data do Pedido</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpo-tabela">
+                    </tbody>
+                </table>
+            </div>
+
+            <br><br>
+            <button onclick="limparHistorico()" class="btn btn-secondary" style="font-size: 0.8rem">Limpar
+                Histórico</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

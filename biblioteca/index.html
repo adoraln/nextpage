@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextPage - Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="glass-container">
+        <aside class="sidebar">
+            <div class="logo">NextPage</div>
+            <div class="user-profile">
+                <div class="avatar"></div>
+                <h3>Usuário</h3>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">✦ Início</a></li>
+                        <li><a href="perfil.html">✦ Meus Livros</a></li>
+                        <li><a href="config.html">✦ Configurações</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <input type="text" placeholder="🔍︎ O que você quer ler?">
+                </div>
+                <div class="top-nav">
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                </div>
+            </header>
+
+            <section class="book-highlight">
+                <div class="book-info">
+                    <h1>O Pequeno Príncipe</h1>
+                    <h3>Antoine de Saint-Exupéry</h3>
+                    <div class="tags">
+                        <span>Filosofia</span>
+                        <span>Clássico</span>
+                    </div>
+                    <p class="description">
+                        O conto de fadas mais famoso do mundo. Uma parábola sábia que fala simples e profundamente sobre
+                        o mais importante: amizade, amor, dever e lealdade.
+                    </p>
+                    <div class="buttons">
+                        <a href="checkout.html?livro=O Pequeno Príncipe" class="btn btn-primary">Alugar Agora</a>
+                        <a href="#" class="btn btn-secondary">Ler Sinopse</a>
+                    </div>
+                </div>
+                <div class="book-cover">
+                    <img src="img/pequenoprincipe.jpg" alt="Capa do livro">
+                </div>
+            </section>
+
+            <section class="section-outros-titulos">
+                <h3>➤ Fantasia & Aventura</h3>
+                <div id="row-fantasia" class="scroll-wrapper"></div>
+            </section>
+
+            <section class="section-outros-titulos">
+                <h3>➤ Ficção Científica</h3>
+                <div id="row-scifi" class="scroll-wrapper"></div>
+            </section>
+
+            <section class="section-outros-titulos">
+                <h3>➤ Terror & Suspense</h3>
+                <div id="row-terror" class="scroll-wrapper"></div>
+            </section>
+
+        </main>
+    </div>
+    <footer class="external-footer">
+        <h4>Desenvolvido por:</h4>
+        <p>Izadora Lacerda & Gustavo Nóbrega</p>
+        <small>Trabalho de Desenvolvimento Web 2 - 2025</small>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
